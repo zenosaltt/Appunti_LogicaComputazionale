@@ -1,4 +1,7 @@
 \documentclass [12pt, letterpaper]{article}
+\usepackage{amsmath}
+
+
 \begin{document}
 	\title{Appunti di Logica computazionale}
 	\author{Rovesti Alberto}
@@ -32,6 +35,72 @@
 		
 	\end{itemize}
 	
-	\section{elementi fondanti}
+	In conclusione il punto chiave è che tutti noi percepiamo il mondo in maniera diversa (semantic gap) e quindi dobbiamo trovare/costruire un sistema che ci permetta di esprimere in maniera inequivocabile se qualcosa sia VERO o FALSO per poter poi costruire concetti più complessi
 	
+	\section{Elementi fondanti}
+	
+	Prima di procedere dobbiamo chiarire 2 distinti elementi che sono fondamentali per la costruzione della logica:
+	le \textbf{entità (entity)}, i \textbf{fatti (facts)} e le \textbf{Rappresentazioni mentali (mental rappresentation )} 
+	
+	\begin{itemize}
+		\item \textbf{Entità}: Sono gli elementi che compongono il mondo: mela, casa, persona, ..... 
+			
+		\item \textbf{Fatti}:
+		Sono delle proprietà che descrivono le entità, queste proprietà possono essere vere o false : la mela è rossa, il cavallo è blu mondo". Possono essere time invariant o no (realative al tempo ) o space invariant 
+	\end{itemize}
+	
+	
+	\subsection{Rappresentazioni Mentali}
+	
+	Come suggerisce il nome la rappresentazione mentale non è altro come noi rappresentiamo il mondo nella nostra testa. E la differenza fra il mondo e la nostra prappresentazione e quel \textit{Semantic gap} di cui abbiamo parlato prima.
+	
+		\underline{Volevo inserire un immagine qui ma non me lo fa fare :(}
+	
+	
+	
+	Ci sono 2 tipi di rappresentazioni del mondo :
+	\begin{itemize}
+		
+		\item \textbf{Analogic mental rappresentation}:
+		Rappresenta il mondo come noi lo vediamo (il primo impatto se si può dire) non filtrato da nessun tipo di linguaggio.  Es: Stai camminando vedi un auto non pensi "Ho visto un auto" tu vedi l'auto nessun filtro "informazione pura". 
+		Sono un insiemi di preceti che si trasformano in fatti.
+		
+		Questa rappre sentazione ci permette di acquisire conscenza dal mondo 
+		
+		 \item \textbf{Linguistic mental rappresentation}:
+		 Questa invece è generata dal linguaggio . Sono rappresentazioni che descrivono le Analogic mental rappresentation attraverso il linguaggio.
+		 
+		 Usa le  \textbf{sentenze} che sono formate attraveso l'utilizzo di un alfabeto e regole di una \textbf{lingua}.
+		 
+		 Ci permettono di esprimere concetti più astratti : Java, Oriented object programing (l'hai mai visto nel mondo?)
+		 
+\[
+\text{Precetti (dalle analogical mental representations)} \longrightarrow{} \text{Concetti (attraverso l'alfabeto)} \longrightarrow{} \text{Sentenze (regole sintattiche di formazione) che descrivono cosa vogliamo rappresentare (conoscenza).}
+\]
+		 
+	\end{itemize}
+
+	\underline{Volevo inserire un immagine qui ma non me lo fa fare :(}\\
+	
+	
+	La consocenza di una persona è l'unione di queste 2 rappresentazioni\\
+	
+	
+	{\large Problema}\\
+
+	Per via del \textit{Semantica gap} ogni rappresentazione mentale differà da quelle delle altre persone quindi ci sono \textbf{infinite rappresentazioni mentali !}. Differenze nelle analogic mental rappresentation conduce a differenze nelle linguistic mental rappresentation.
+	
+	Le mental rappresentation sono diverse per via delle differenti \textbf{cordinate spazio temporali} in cui sono state generate (io adesso, io fra 20 anni) e per lo \textbf{scopo} (il pilota di un aereo e l'igeniere che lo costruisce hanno 2 rappresentazioni diverse ).
+	
+	
+	Oltre a differire alcune rappresentazioni possono essere \textbf{incoerenti}:
+
+	Una rappresentazione mentale è incoerenti quando rappresenta uno stato del mondo che è impossibile per come lo conosciamo. Coerenza significa assenza di incoerenza.
+	
+	2 mental rappresentation possono essere \textbf{Mutualmente incosistenti} : 
+	solo 1 di loro può essere vera allo stesso tempo (oggi alle 4 sono a Roma, oggi alle 4 sono a Mosca). Nel caso contrario in cui 2 mental rappresentation non sono mutualmente incosistenti diciamo che sono \textbf{compatibili}
+	
+	
+	Come abbiamo detto in precedenza le rappresentazioni differiscono (sono soggettive) e quindi 2 differenti mental rappresentation della stessa cosa possono esse \textit{mutualmente inconsistenti} , La presenza di incoerenza fornisce la prova della soggettività
+	delle rappresentazioni mentali coinvolte
 \end{document}
