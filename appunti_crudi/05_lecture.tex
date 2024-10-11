@@ -1,0 +1,202 @@
+\chptr{Lezione}
+\marginpar{\minitoc}
+
+
+\section{Funzione}
+Oggi finiamo mapping tra descrizione linguistica
+e modello formale.
+
+
+Definizione di funzione di interpretazione:
+funzione che prende in input un linguaggio e lo
+produce in un dominio.
+
+\[ I_a: L_a \to D \]
+
+Diciamo che l'asserzione $a$ denota il fatto $f$.
+
+
+Non ambiguità: non è possibile che la funzione applicata
+ad una asserzione ritorni fatti diversi. Se $f_1 \not = f_2$
+sono diversi, non può essere che $I_a(a) = f_1$ e $I_a(a) = f_2$.
+
+Polisemia (lingua italiana 2.3 in media ogni parola in italiano
+ha più di 2 o poco più significati). Nel linguaggio naturale
+tutto è informale, ambigua. Motivo per cui facciamo logica.
+
+Sinonimia. No problem in logica $I_a(a_1) = I_a(a_2)$. Ma in
+alcuni contesti può non essere desiderabile. In database, per esempio
+questo non è ammesso per question di efficienza nella ricerca
+di elementi.
+
+Totalità. Funzioni di interpretazione sono totali, ogni elemento
+della lingua ha un significato. wawawa non ha significato, perché
+non appartiene al linguaggio. Elementi di linguaggio che non
+denotano fatti -> brutti noooo.
+
+Non Surgettività. Ma esiste un fatto per cui non esistono elementi del linguaggi
+che lo denotano? Sì, è ammesso. Es persone in aula: creiamo
+un linguaggio che descrive parte delle persone e degli oggetti
+nell'aula. Perdiamo in completezza, ma funziona lo stesso.
+
+Teoria massimale. è solo una, contiene una o più asserzioni per ogni fatto
+nel modello inteso. Teoria in cui sai tutto.
+
+
+\section{Modello del mondo}
+tripla dove devo dare il linguaggio di asserzione il dominio di interpretazione
+e una funzione di asserzione.
+
+\[ W = \left\langle L_a, D, I_a \right\rangle  \]
+
+Fatto ciò, notiamo che il mondo è una infrastruttura concettuale. La nostra
+immagine che conosciamo in casi particolare è $M = \{f\} \subset D$.
+Es database: con ER model ci veniva insegnato $W$, ma poi creavamo $M, T_a$.
+
+\section{vero e falso formalmente}
+Prendere la frase, interpretarla vedere cosa denota e vedere se è un fatto
+ammissibile, che possiamo raggiungere, $f \in M$.
+
+
+
+Esempio: parliamo del tempo di Trento, ma poi diciamo a new york piove. è vero
+o falso. Nessuno dei due no, perché ogni asserzione è vera o falsa perché per
+il nostro linguaggio è una parola ammissibile.
+
+Disaccordo: funzione di interpretazione diversa, o modello inteso diverso
+(eterogeneità semantica).
+
+
+Gente parla di sintassi e semantica informalmente, intendendo sintassi
+come sinonimo di grammatica.
+
+\section{Corretto e completo}
+Dato vero e falso, possiamo formalizzare correttezza e completezza.
+Diciamo che dato un modello del mondo, un linguaggio asserzionale (che asserisce fatti sul mondo)
+
+Correttezza linguaggio = tutte le asserzioni sono mappate in fatti del dominio.
+
+
+Correttezza-completezza della teoria.
+
+
+\section{Entailment}
+Funzione fondamentale per ragionamento. Funz di interpretaz è $M \vDash T_a$
+
+$I_a:$ dati gli elementi del linguaggio dice cosa vogliono dire
+
+
+Abbiamo una foto con una montagna, una casetta, il sole (loda il sole) -> modello.
+Prendiamo un sistema di computer vision che alleniamo a riconoscere
+vari oggetti nelle immagini.
+Teoria: "c'è una bicicletta" -> no non c'è, perché non sta nel modello.
+Inoltre, per riconoscere quello che può esserci nel modello deve stare
+nel linguaggio. Dico che $T$ è teoria se quello che tu mi hai detto c'è dentro il
+modello.
+
+Entailment è irrilevante sulla sintassi del linguaggio in uso, ciò che è
+importante è la funzione di interpretazione, perché ci permette di validare
+affermazioni etichettando con i concetti di vero e falso.
+
+
+Applicazione di mondo aperto: (open world, in the wild) è tale per cui
+a design time (quando scrivi software) non hai una specifica completa
+del tuo input.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RAgionamento> partire da premesse e arrivare a conclusioni.
+Le premessse sono cose linguistiche che dici (quindi teoria),
+conclusioni sono fatti. Quindi alla teoria aggiungiamo cose
+nuove (unione di insiemi). Questo ovviamente non ha senso se
+le premesse sono false. Abbiamo già formalizzato veirtà con
+entailment $M \vDash T$.
+
+Rappresentazione del mondo R coppia teoria-modello.
+
+TellT restringe il numero di modelli compatibili. Più asserzioni
+metto più aumentano i vincoli che impongo.
+
+Indecidibile = tempo infinito per decidere
+
+
+
+
+
+
+
+
+
+\section{Logica delle entità}
+Facciamo una logica che ci faccia fare askc tellcassimassi sul modello più semplice (quale sarebbe???)
+
+Data type è essenzialmente un etype, cioè un'entità che però non ``vediamo per strada'', 
+
+Dominio è spazio di quello che possiamo vedere, quello che vediamo è il modello.
+
+
+%%%%
+
+Questa logica ha obiettivo formalizzare e automatizzare quel ragionamento che si fa nei world models.
+Assumiamo che le entita abbiano un nome.
+
+Slide which percepts: ha alfabeto che include ognuno dei sei percetti fondamentali. 
+
+Fausto ha mangiato una mela, con soddisfazione, alle 5 pm, col coltello. Con loe rinunciamo
+a relazioni narie, vogliamo solo quelle binarie (in realtà delle triple)
+
+
+Alfabeto = insieme di parole (in realtà concetti, non parole nel senso del liguaggio naturale)
+è na tripla
+
+2 tipi di relazioni: proprietà-ruoli = relazioni tra etypes (padre-figlio) e relazioni
+
+BNF = bachus naur form. $\not\mid$
+
+
+$M \vDash T_a$ if and only if $I_(a) \in M$ for all $a \in T_a$
+
+complex etypes
